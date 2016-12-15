@@ -1,0 +1,221 @@
+{
+    "ATL": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_ORL@ATL"
+            }
+        ]
+    },
+    "BOS": {
+        "games": []
+    },
+    "NJN": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_BKN@HOU"
+            }
+        ]
+    },
+    "CHA": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_CHA@IND"
+            }
+        ]
+    },
+    "CHI": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_MIN@CHI"
+            }
+        ]
+    },
+    "CLE": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_MEM@CLE"
+            }
+        ]
+    },
+    "DAL": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_DEN@DAL"
+            }
+        ]
+    },
+    "DEN": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_DEN@DAL"
+            }
+        ]
+    },
+    "DET": {
+        "games": []
+    },
+    "GSW": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_GS@NO"
+            }
+        ]
+    },
+    "HOU": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_BKN@HOU"
+            }
+        ]
+    },
+    "IND": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_CHA@IND"
+            }
+        ]
+    },
+    "LAC": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_POR@LAC"
+            }
+        ]
+    },
+    "LAL": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_LAL@SAC"
+            }
+        ]
+    },
+    "MIA": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_WAS@MIA"
+            }
+        ]
+    },
+    "MIL": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_MIL@TOR"
+            }
+        ]
+    },
+    "MIN": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_MIN@CHI"
+            }
+        ]
+    },
+    "MEM": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_MEM@CLE"
+            }
+        ]
+    },
+    "NYK": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_NY@PHO"
+            }
+        ]
+    },
+    "NOH": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_GS@NO"
+            }
+        ]
+    },
+    "ORL": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_ORL@ATL"
+            }
+        ]
+    },
+    "OKC": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_OKC@POR"
+            }
+        ]
+    },
+    "PHI": {
+        "games": []
+    },
+    "PHO": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_NY@PHO"
+            }
+        ]
+    },
+    "POR": {
+        "games": [
+            {
+                "date": "20161213",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161213_OKC@POR"
+            },
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_POR@LAC"
+            }
+        ]
+    },
+    "SAC": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_LAL@SAC"
+            }
+        ]
+    },
+    "SAS": {
+        "games": []
+    },
+    "TOR": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_MIL@TOR"
+            }
+        ]
+    },
+    "UTA": {
+        "games": []
+    },
+    "WAS": {
+        "games": [
+            {
+                "date": "20161212",
+                "game_link": "/nba/gametracker/boxscore/NBA_20161212_WAS@MIA"
+            }
+        ]
+    }
+}

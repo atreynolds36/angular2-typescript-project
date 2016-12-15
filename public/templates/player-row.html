@@ -1,0 +1,34 @@
+<tr class="grey-row-bs" [ngClass]="{'danger' : player.cut }">
+    <td> {{ player.name }}</td>
+    <td> {{ player.team }}</td>
+    <td colspan="9" *ngIf="!player.stats_loaded" style="text-align:center;"> Loading... </td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.fgpct | percent:'1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.ftpct | percent:'1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.tpm | number : '1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.pts | number : '1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.rbs | number : '1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.ast | number : '1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.stl | number : '1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.blk | number : '1.0-2' }}</td>
+    <td *ngIf="player.stats_loaded"> {{ player.weekly_stats.tov | number : '1.0-2' }}</td>
+</tr>
+<tr class="warning" *ngIf="( projection_generated && ! player.cut )">
+    <td></td>
+    <td>
+        <button type="button" class="btn btn-default btn-sm" data-target="#myModal" data-toggle="modal"
+            (click)="analyze.emit(player)">
+            <span class="glyphicon glyphicon-signal" aria-hidden="true" ></span>
+        </button>
+    </td>
+    <td colspan="9" *ngIf="!player.projection_loaded && ! player.injured" style="text-align:center;"> Loading... </td>
+    <td colspan="9" *ngIf="player.injured" style="text-align:center;"> OUT </td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.fgpct | percent:'1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.ftpct | percent:'1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.tpm | number : '1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.pts | number : '1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.rbs | number : '1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.ast | number : '1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.stl | number : '1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.blk | number : '1.0-2' }}</td>
+    <td *ngIf="player.projection_loaded"> {{ player.projected_statline.tov | number : '1.0-2' }}</td>
+</tr>

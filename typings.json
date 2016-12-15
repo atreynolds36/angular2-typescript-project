@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "registry:npm/express#4.14.0+20160925001530",
+    "serve-static": "registry:npm/serve-static#1.11.1+20160810053450"
+  },
+  "globalDependencies": {
+    "async": "registry:dt/async#2.0.1+20161110083428",
+    "cheerio": "registry:dt/cheerio#0.17.0+20160930124405",
+    "express": "registry:dt/express#4.0.0+20160708185218",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#4.0.0+20161012061536",
+    "mime": "registry:dt/mime#0.0.0+20160316155526",
+    "node": "registry:dt/node#6.0.0+20161019125345",
+    "serve-static": "registry:dt/serve-static#0.0.0+20160606155157"
+  }
+}

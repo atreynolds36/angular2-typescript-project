@@ -1,0 +1,28 @@
+extends layout
+block page-scripts
+    //
+        script(src="/node_modules/core-js/client/shim.min.js")
+        script(src="/node_modules/zone.js/dist/zone.js")
+        script(src="/node_modules/reflect-metadata/Reflect.js")
+        script(src="/node_modules/rxjs/bundles/Rx.js")
+        script(src="/node_modules/@angular/core/bundles/core.umd.js")
+        script(src="/node_modules/@angular/common/bundles/common.umd.js")
+        script(src="/node_modules/@angular/compiler/bundles/compiler.umd.js")
+        script(src="/node_modules/@angular/platform-browser/bundles/platform-browser.umd.js")
+        script(src="/node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js")
+        script(src="app/app.component.js")
+        script(src="app/app.module.js")
+        script(src="app/main.js")
+    script(src='/javascripts/client/node_modules/core-js/client/shim.min.js')
+    script(src='/javascripts/client/node_modules/zone.js/dist/zone.js')
+    script(src='/javascripts/client/node_modules/reflect-metadata/Reflect.js')
+    script(src='/javascripts/client/node_modules/systemjs/dist/system.src.js')
+    script(src="/javascripts/client/systemjs.config.js")
+    script.
+        System.import('app').catch(function(err){ console.error(err); });
+
+
+block main-content
+    my-app
+        p Angular2 App Loading...
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{localNodeServer/node_modules}" />
+    <file url="file://$PROJECT_DIR$/angular" libraries="{localNodeServer/angular/node_modules}" />
+    <file url="file://$PROJECT_DIR$/client" libraries="{localNodeServer/client/node_modules}" />
+    <file url="file://$PROJECT_DIR$/public/javascripts/client" libraries="{localNodeServer/public/javascripts/client/node_modules}" />
+    <includedPredefinedLibrary name="ECMAScript 6" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>

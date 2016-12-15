@@ -1,0 +1,22 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        //- maximum-scale=1 seems to fix the initial scroll issue on iPad.
+        meta(name='viewport', content='width=device-width, maximum-scale=1')
+        title='Fantasy App Generator'
+        link(rel='stylesheet', type='text/css', href="/stylesheets/bootstrap/bootstrap.min.css")
+        link(rel='stylesheet', type='text/css', href="/stylesheets/layout.css")
+        script(src='/javascripts/jquery-1.11.1.min.js')
+        script(src='/javascripts/bootstrap/bootstrap.min.js')
+        script(src="/javascripts/index.js")
+        block page-scripts
+    body
+        nav.navbar.navbar-default
+            .container-fluid
+                .navbar-header
+                    a.navbar-brand(href="#") Fantasy Basketball Generator
+        block main-content
+        footer.footer
+            .container
+                p @AReynolds

@@ -1,0 +1,76 @@
+extends layout
+block main-content
+    .container.main-container
+        h1 Matchup Page
+        .row
+            .col-md-6.col-md-offset-3
+                table.table.table-striped.table-bordered.table-condensed
+                    thead
+                        tr
+                            th Team
+                            th FG%
+                            th FT%
+                            th 3PM
+                            th PTS
+                            th RBS
+                            th AST
+                            th STL
+                            th BLk
+                            th TUR
+                    tbody
+                        tr#AndrewsTeam
+                            th Andrews Team
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                        tr#OpposingTeam
+                            th Opponents Team
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+                            td
+            .col-md-3
+                button.btn.btn-large.btn-primary#generateProjectionBtn Generate Projection
+        .row
+            .col-md-6
+                table.table.table-striped.table-bordered.table-condensed#team1Table
+                    tr
+                        th Player
+                        th Team
+                        th FG's
+                        th FT's
+                        th 3PM
+                        th PTS
+                        th RBS
+                        th AST
+                        th STL
+                        th BLC
+                        th TUR
+                    tbody
+            .col-md-6
+                table.table.table-striped.table-bordered.table-condensed#team2Table
+                    thead
+                        tr
+                            th Player
+                                th Team
+                                th FG's
+                                th FT's
+                                th 3PM
+                                th PTS
+                                th RBS
+                                th AST
+                                th STL
+                                th BLC
+                                th TUR
+                    tbody
