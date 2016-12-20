@@ -34,6 +34,21 @@ var Statline = (function () {
             this.fgpct = this.fgm / this.fga; // ( this.fgm / this.fga ) * 100
         }
     };
+    Statline.prototype.swap = function (newStats, oldStats) {
+        //ADD
+        for (var key in newStats) {
+            if (typeof this[key] != 'function') {
+                this[key] += newStats[key];
+            }
+        }
+        //SUBTRACT
+        for (var key in oldStats) {
+            if (typeof this[key] != 'function') {
+                this[key] -= oldStats[key];
+            }
+        }
+        this.calcPercentages();
+    };
     return Statline;
 }());
 exports.Statline = Statline;

@@ -94,7 +94,7 @@ export class Player{
             if( data_stat[data_stat_prop] ){
                 console.log( 'DATA-STAT ' + data_stat[data_stat_prop] )
                 let stat_prop = data_stat[data_stat_prop];
-                _player[stat_prop] = $(this).html();
+                _player[stat_prop] = $(this).text();
             }
         })
         console.log( 'POINTS + ' + this.PTS );

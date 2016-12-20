@@ -76,16 +76,31 @@
         </thead>
         <tr>
             <td>{{replacementPlayer.name}}</td>
-            <td>{{replacementPlayer.team}}</td>
-            <td>{{replacementPlayer.projected_statline.fgpct}}</td>
-            <td>{{replacementPlayer.projected_statline.ftpct}}</td>
-            <td>{{replacementPlayer.projected_statline.tpm}}</td>
-            <td>{{replacementPlayer.projected_statline.pts}}</td>
-            <td>{{replacementPlayer.projected_statline.rbs}}</td>
-            <td>{{replacementPlayer.projected_statline.ast}}</td>
-            <td>{{replacementPlayer.projected_statline.stl}}</td>
-            <td>{{replacementPlayer.projected_statline.blk}}</td>
-            <td>{{replacementPlayer.projected_statline.tov}}</td>
+            <td>{{replacementPlayer.projected_statline.fgpct | percent:'1.0-2' }}</td>
+            <td>{{replacementPlayer.projected_statline.ftpct | percent:'1.0-2'}}</td>
+            <td>{{replacementPlayer.projected_statline.tpm | number :'1.0-2'}}</td>
+            <td>{{replacementPlayer.projected_statline.pts | number :'1.0-2'}}</td>
+            <td>{{replacementPlayer.projected_statline.rbs | number :'1.0-2'}}</td>
+            <td>{{replacementPlayer.projected_statline.ast | number :'1.0-2'}}</td>
+            <td>{{replacementPlayer.projected_statline.stl | number :'1.0-2'}}</td>
+            <td>{{replacementPlayer.projected_statline.blk | number :'1.0-2'}}</td>
+            <td>{{replacementPlayer.projected_statline.tov | number :'1.0-2'}}</td>
+        </tr>
+        <tr>
+            <td>{{inputPlayer.name}}</td>
+            <td>{{inputPlayer.projected_statline.fgpct | percent:'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.ftpct | percent:'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.tpm | number :'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.pts | number :'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.rbs | number :'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.ast | number :'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.stl | number :'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.blk | number :'1.0-2'}}</td>
+            <td>{{inputPlayer.projected_statline.tov | number :'1.0-2'}}</td>
         </tr>
     </table>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">End</button>
 </div>

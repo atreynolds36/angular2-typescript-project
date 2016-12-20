@@ -16,6 +16,9 @@ var Team = (function () {
     Team.prototype.addPlayerStatsToTotal = function (stats) {
         this.weekly_stats.push(stats);
     };
+    Team.prototype.swapStats = function (newStats, oldStats) {
+        this.weekly_stats.swap(newStats, oldStats);
+    };
     return Team;
 }());
 exports.Team = Team;

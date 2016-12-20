@@ -36,4 +36,20 @@ export class Statline {
             this.fgpct = this.fgm / this.fga;// ( this.fgm / this.fga ) * 100
         }
     }
+
+    swap(newStats : Statline , oldStats : Statline ){
+        //ADD
+        for(let key in newStats){
+            if( typeof this[key] != 'function'){
+                this[key] += newStats[key];
+            }
+        }
+        //SUBTRACT
+        for(let key in oldStats){
+            if( typeof this[key] != 'function'){
+                this[key] -= oldStats[key];
+            }
+        }
+        this.calcPercentages();
+    }
 }

@@ -23,4 +23,8 @@ export class Team {
     addPlayerStatsToTotal(stats : Statline){
         this.weekly_stats.push(stats);
     }
+
+    swapStats( newStats : Statline , oldStats : Statline ){
+        this.weekly_stats.swap(newStats , oldStats );
+    }
 }

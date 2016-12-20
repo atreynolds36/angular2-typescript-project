@@ -4,14 +4,14 @@
  */
 var statline_1 = require('./statline');
 var Player = (function () {
-    function Player(name, team, injured) {
+    function Player(name, team, inj) {
         this.name = name;
         this.team = team;
-        this.injured = injured;
+        this.inj = inj;
         this.weekly_stats = new statline_1.Statline();
         this.cut = false;
         this.added = false;
-        this.injured = false;
+        this.injured = inj;
         this.stats_loaded = false;
         this.projection_loaded = false;
         this.projected_statline = new statline_1.Statline();

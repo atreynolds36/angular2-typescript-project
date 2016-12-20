@@ -47,8 +47,12 @@ class Connector{
             res.on("end", function () {
                 var body = Buffer.concat(chunks);
                 let $ = cheerio.load( body.toString()  );
-                var iter : any = $('td[csk="' + player + '"]').find('a');
-                var player_href : string = iter.prop('href');
+                var csk = $('td').filter(function(){
+                    var csk = $(this).attr('csk');
+                    return csk && csk.toUpperCase().indexOf(player.toUpperCase()) > -1;
+                });
+                var iter : any = csk.find('a');
+                var player_href = iter && iter.prop('href');
                 if(player_href){
                     callback( null , player_href )
                 } else {

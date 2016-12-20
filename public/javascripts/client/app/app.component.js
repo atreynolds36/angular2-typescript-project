@@ -14,7 +14,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var app_constants_1 = require('./shared/app-constants');
 var team_1 = require('./classes/team');
-var player_1 = require('./classes/player');
 var rest_service_1 = require('./services/rest-service');
 var AppComponent = (function () {
     function AppComponent(dataService) {
@@ -62,18 +61,9 @@ var AppComponent = (function () {
             }, function (error) { return console.log(error); });
         }
     };
-    AppComponent.prototype.replacePlayer = function (p) {
-        this.replacementPlayer = p;
-    };
     AppComponent.prototype.setReplacementPlayer = function (p) {
         this.replacementPlayer = p;
     };
-    __decorate([
-        core_1.HostListener('replace_player_event'), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [player_1.Player]), 
-        __metadata('design:returntype', void 0)
-    ], AppComponent.prototype, "replacePlayer", null);
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',

@@ -13,13 +13,14 @@ export class Player {
     public stats_loaded : boolean;
     public projection_loaded : boolean;
     public projected_statline : Statline;
+    public injured : boolean;
 
     constructor(public name : string , public team : string ,
-                public injured ?: boolean ) {
+                public inj ?: boolean ) {
         this.weekly_stats = new Statline();
         this.cut = false;
         this.added = false;
-        this.injured = false;
+        this.injured = inj;
         this.stats_loaded = false;
         this.projection_loaded = false;
         this.projected_statline = new Statline();

@@ -14,8 +14,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var app_constants_1 = require('../shared/app-constants');
 var Player_1 = require('../classes/Player');
+var rest_service_1 = require('../services/rest-service');
 var MyModalComponent = (function () {
-    function MyModalComponent() {
+    function MyModalComponent(ds) {
+        this.ds = ds;
         this.stat_categories = app_constants_1.APP_CONSTANTS.stat_categories;
         this.analysis_run = false;
     }
@@ -29,12 +31,24 @@ var MyModalComponent = (function () {
     });
     MyModalComponent.prototype.ngOnInit = function () { };
     MyModalComponent.prototype.runAnalysis = function () {
-        this.analysis_run = true;
+        var _this = this;
+        this.inputPlayer = new Player_1.Player(this.firstname + " " + this.lastname, this.team);
+        this.ds.fetchPlayerWeeklyProjection(this.inputPlayer)
+            .subscribe(function (stats) {
+            _this.analysis_run = true;
+            _this.inputPlayer.loadProjectedStats(stats);
+            _this.team1.swapStats(stats, _this.replacementPlayer.projected_statline);
+        }, function (error) {
+            alert('Could not find player');
+        });
+    };
+    MyModalComponent.prototype.ngOnDestroy = function () {
+        console.log('destroyed');
     };
     __decorate([
         core_1.Input('replacePlayer'), 
         __metadata('design:type', Player_1.Player)
-    ], MyModalComponent.prototype, "replacement_player", void 0);
+    ], MyModalComponent.prototype, "replacementPlayer", void 0);
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object), 
@@ -43,9 +57,10 @@ var MyModalComponent = (function () {
     MyModalComponent = __decorate([
         core_1.Component({
             selector: '<my-modal-component',
-            templateUrl: '../templates/modal-component.html'
+            templateUrl: '../templates/modal-component.html',
+            providers: [rest_service_1.DataService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [rest_service_1.DataService])
     ], MyModalComponent);
     return MyModalComponent;
 }());

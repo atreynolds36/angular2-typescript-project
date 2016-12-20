@@ -75,10 +75,6 @@ export class AppComponent implements OnInit {
         }
     }
 
-    @HostListener('replace_player_event') replacePlayer(p : Player) {
-        this.replacementPlayer = p;
-    }
-
     setReplacementPlayer(p : Player ){
         this.replacementPlayer = p;
     }

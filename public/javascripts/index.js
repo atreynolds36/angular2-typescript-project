@@ -8,38 +8,10 @@ var app_constants = {
     MY_TEAM_INDEX : 1
 };
 
-app.myTeam = [
-    { name : "Jae Crowder" , team : "BOS" } ,
-    { name : "Kyrie Irving", team : "CLE" } ,
-    { name : 'Josh Richardson' , team : 'MIA'},
-    { name : "Sean Kilpatrick" , team : 'NJN'},
-    { name : 'Derrick Rose', team : 'NYK'},
-    { name : 'Carmelo Anthony' , team : 'NYK' },
-    { name : 'Blake Griffin' , team : 'LAC'},
-    { name : 'Kent Bazemore' , team : 'ATL'},
-    { name : 'Marc Gasol' , team : 'MEM'},
-    { name : 'Michael Kidd-Gilchrist' , team : 'CHA'},
-    { name : 'Frank Kaminsky' , team : 'CHA'},
-    //{ name : 'Tim Frazier' , team : 'NOH', cut : '20161117'},
-    //{ name : 'Alex Len' , team : 'PHO' , cut : '20161117'},
-    { name : 'Goran Dragic' , team : 'MIA' },
-    { name : 'Jeremy Lin' , team : 'NJN' , injury_flag : true}
-
-];
+app.myTeam = []
 
 app.opposingTeam = [
-    { name : 'Kyle Lowry' , team : 'TOR'},
-    { name : 'Buddy Hield' , team : 'NOH'},
-    { name : 'Kris Dunn' , team : 'MIN'},
-    { name : 'Luol Deng' , team : 'LAL'},
-    { name : 'Zach Randolph' , team : 'MEM'},
-    { name : 'Paul Millsap' , team : 'ATL'},
-    { name : 'Andrew Bogut' , team : 'DAL'},
-    { name : 'Ricky Rubio' , team : 'MIN'},
-    { name : 'Tony Parker' , team : 'SAS'},
-    { name : 'Jimmy Butler' , team : 'CHI'},
-    { name : 'Giannis Antetokoumpo' , team : 'MIL'},
-    { name : 'Eric Gordon' , team : 'HOU'},
+    { name : 'James Harden' , team : 'HOU'}
 ];
 
 app.team1 = {
